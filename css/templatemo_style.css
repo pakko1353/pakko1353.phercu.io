@@ -248,8 +248,8 @@ a.tm-home-more:hover {
 	font-weight: 700;
 }
 .member-title {	color: #fff; }
-.tm-about-title, .tm-about-subtitle, .tm-about-subtitle-2 {	font-weight: 700; }
-.tm-about-title { font-size: 85px; }
+.tm-about-title, .tm-about-subtitle, .tm-about-subtitle-2 {	font-weight: 700;}
+.tm-about-title { font-size: 85px; color: #7790f0; }
 .tm-about-subtitle {
 	font-size: 44px;
 	margin-top: 5px;
