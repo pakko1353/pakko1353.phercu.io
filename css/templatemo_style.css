@@ -41,13 +41,16 @@ ul {
 	color: #CF6;
 }
 
-.tm-orange-text { color: #057dca; }
+.tm-orange-text { color: #000; }
 .tm-orange-bg {	background-color: #057dca; }
-.tm-orange-bg-transparent {	background-color: #967702; }
-.tm-white-text { color: #fff; }
-.tm-dark-text {	color: #1d1d1d; }
-.tm-dark-bg { background-color: #1d1d1d; }
-.tm-light-gray-text { color: #eaeaea; }
+.tm-orange-bg-transparent {	background-color: #967702; } /*NO SE*/
+.tm-white-text { color: #fff; }  /*NO SE*/
+.tm-dark-text {	color: #fff; } /* botones*/
+.tm-text {	color: #000; } /* botones*/
+.tm-dark-bg { background-color: #7790f0; } /*fondo oscuro*/
+.tm-white-bg { background-color: #fff; } /*pie*/
+.tm-dark-bg-tarject { background-color: rgba(117, 118, 119, 0.76); } /*fondo oscuro*/
+.tm-light-gray-text { color: #000; } /*letras portafolio y en planes*/
 
 a.tm-light-gray-text:hover {
 	color: #fff;
@@ -87,6 +90,7 @@ a.tm-light-gray-text:hover {
 }
 .templatemo-header-inner {	padding-top: 30px; }
 .templatemo-logo {
+    color: #000;
 	font-size: 60px;
 	font-weight: 700;
 }
@@ -174,8 +178,8 @@ a#mobile_menu {
 }
 .tm-home-subtitle {	font-size: 18px; }
 .tm-home-description {
-	font-size: 14px;
-	color: #828282;
+	font-size: 16px;
+	color: #fff;
 	margin-bottom: 50px;
 	text-align: justify;
 }
@@ -285,6 +289,7 @@ a.tm-home-more:hover {
 	height: 480px;
 	max-width: 300px;
 	width: 100%;
+    background-color: rgba(82, 83, 93, 0.67);
 }
 .tm-pricing-header {
 	border-bottom: 1px solid #057dca;
@@ -299,7 +304,7 @@ a.tm-home-more:hover {
 	line-height: 2em;
 }
 .price-tag {
-	background-color: #057dca;
+	background-color: #057dca; /*color del circulo de precio*/
 	border-radius: 50%;
 	color: #1d1d1d;
 	display: inline-block;
@@ -474,7 +479,7 @@ footer p {
 --------------------------------------*/
 @media screen and (max-width: 992px) {
 	.container { max-width: 940px; }
-	.templatemo-logo { font-size: 50px; }
+	.templatemo-logo { font-size: 50px;}
 	.templatemo-nav li>a { padding: 8px 5px; }
 	.tm-about-right { text-align: center; }
 	.canvas-lines {	padding-top: 0px; }
