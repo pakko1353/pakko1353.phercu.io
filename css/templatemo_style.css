@@ -43,7 +43,7 @@ ul {
 
 .tm-orange-text { color: #000; }
 .tm-orange-bg {	background-color: #057dca; }
-.tm-orange-bg-transparent {	background-color: #967702; } /*NO SE*/
+.tm-orange-bg-transparent {	background-color: #fff; } /*NO SE*/
 .tm-white-text { color: #fff; }  /*NO SE*/
 .tm-dark-text {	color: #fff; } /* botones*/
 .tm-text {	color: #000; } /* botones*/
