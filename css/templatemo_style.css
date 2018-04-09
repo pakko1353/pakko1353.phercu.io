@@ -47,7 +47,7 @@ ul {
 .tm-white-text { color: #fff; }  /*NO SE*/
 .tm-dark-text {	color: #fff; } /* botones*/
 .tm-text {	color: #000; } /* botones*/
-.tm-dark-bg { background-color: #7790f0; } /*fondo oscuro*/
+.tm-dark-bg { background-color: #0081CF; } /*fondo oscuro*/
 .tm-white-bg { background-color: #fff; } /*pie*/
 .tm-dark-bg-tarject { background-color: rgba(117, 118, 119, 0.76); } /*fondo oscuro*/
 .tm-light-gray-text { color: #000; } /*letras portafolio y en planes*/
@@ -88,8 +88,13 @@ a.tm-light-gray-text:hover {
 	background-size: auto;
 	min-height: 250px;
 }
+@font-face {
+    font-family: font_titulo;
+    src: url(../fonts/segoesc.ttf);
+}
 .templatemo-header-inner {	padding-top: 30px; }
 .templatemo-logo {
+	font-family: font_titulo;
     color: #000;
 	font-size: 60px;
 	font-weight: 700;
@@ -249,7 +254,7 @@ a.tm-home-more:hover {
 }
 .member-title {	color: #fff; }
 .tm-about-title, .tm-about-subtitle, .tm-about-subtitle-2 {	font-weight: 700;}
-.tm-about-title { font-size: 85px; color: #7790f0; }
+.tm-about-title { font-size: 85px; color: #0081CF; }
 .tm-about-subtitle {
 	font-size: 44px;
 	margin-top: 5px;
@@ -461,7 +466,9 @@ hr.tm-author-name-underline {
 	padding: 8px 35px;
 }
 .tm-send-btn:hover { color: #fff; }
-
+.form_bg{
+	background: #fff;
+}
 /* 11. Footer
 --------------------------------------*/
 footer {

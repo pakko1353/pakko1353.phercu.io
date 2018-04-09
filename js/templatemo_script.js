@@ -74,7 +74,8 @@
 /* Functions
 -----------------------------------------------------*/
 var tmFillStyle = 'rgba(0,0,0,0.6)';
-var tmYellowFill = '#ffc601';
+// var tmYellowFill = '#ffc601';
+var tmYellowFill = '#0081CF';
 
 function drawMember1Image() {
     // Draw Member 1
@@ -131,9 +132,9 @@ function drawMember2Image() {
     ctx2.moveTo(0,50);
     ctx2.lineTo(114,0);
     ctx2.lineTo(228,50);
-    ctx2.lineTo(228,335);
+    // ctx2.lineTo(228,335);
     ctx2.lineTo(114,385);
-    ctx2.lineTo(0,335);      
+    // ctx2.lineTo(0,335);      
     ctx2.clip(); // Clip to the current path
     ctx2.drawImage(member2Image, 0, 0);
 
@@ -141,10 +142,10 @@ function drawMember2Image() {
     ctx2.beginPath();
     ctx2.fillStyle = tmYellowFill;
     ctx2.moveTo(0, 335);
-    ctx2.lineTo(114, 385);
-    ctx2.lineTo(228, 335);
-    ctx2.lineTo(228, 355);
-    ctx2.lineTo(114, 405);
+    // ctx2.lineTo(114, 385);
+    // ctx2.lineTo(228, 335);
+    // ctx2.lineTo(228, 355);
+    // ctx2.lineTo(114, 405);
     ctx2.lineTo(0, 355);
     ctx2.fill();
 
@@ -156,9 +157,9 @@ function drawMember2Image() {
     ctx_overlay2.moveTo(0,50);
     ctx_overlay2.lineTo(114,0);
     ctx_overlay2.lineTo(228,50);
-    ctx_overlay2.lineTo(228,335);
+    // ctx_overlay2.lineTo(228,335);
     ctx_overlay2.lineTo(114,385);
-    ctx_overlay2.lineTo(0,335);
+    // ctx_overlay2.lineTo(0,335);
     ctx_overlay2.fill();
 }
 
@@ -316,8 +317,8 @@ var center;
 
 function initialize() {
     var mapOptions = {
-      zoom: 15,
-      center: new google.maps.LatLng(40.7828839,-73.9652425)
+      zoom: 10,
+      center: new google.maps.LatLng(10.439541, -64.178795)
     };
   
     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
