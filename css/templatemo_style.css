@@ -41,7 +41,8 @@ ul {
 	color: #CF6;
 }
 
-.tm-orange-text { color: #fff; }
+.tm-orange-text { color: #000; }
+.tm-orange-text2 { color: #fff; }
 .tm-orange-bg {	background-color: #0093EE; }
 .tm-orange-bg-transparent {	background-color: #fff; } /*NO SE*/
 .tm-white-text { color: #fff; }  /*NO SE*/
