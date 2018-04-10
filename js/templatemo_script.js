@@ -231,6 +231,8 @@ function setupAboutSection(){
     });
 }
 
+//OFERTAS CANVAS
+
 function setupPricingSection() {
     
     // http://stackoverflow.com/questions/3318565/any-way-to-clone-html5-canvas-element-with-its-content
@@ -240,7 +242,7 @@ function setupPricingSection() {
     {
         var ctx = canvas1.getContext("2d");
         // Draw triangle
-        ctx.fillStyle="#ffc601";
+        ctx.fillStyle="#0081CF";
         ctx.shadowColor = "rgba(0,0,0,0.3)";
         ctx.shadowBlur = 7;
         ctx.shadowOffsetX = 3;
@@ -265,7 +267,7 @@ function setupPricingSection() {
     {
         var ctx = canvas2.getContext("2d");
         // Draw triangle
-        ctx.fillStyle="#ffc601";
+        ctx.fillStyle="#0081CF";
         ctx.shadowColor = "rgba(0,0,0,0.3)";
         ctx.shadowBlur = 7;
         ctx.shadowOffsetX = 3;
