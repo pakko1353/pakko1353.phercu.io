@@ -132,9 +132,9 @@ function drawMember2Image() {
     ctx2.moveTo(0,50);
     ctx2.lineTo(114,0);
     ctx2.lineTo(228,50);
-    // ctx2.lineTo(228,335);
+    ctx2.lineTo(228,335);
     ctx2.lineTo(114,385);
-    // ctx2.lineTo(0,335);      
+    ctx2.lineTo(0,335);      
     ctx2.clip(); // Clip to the current path
     ctx2.drawImage(member2Image, 0, 0);
 
@@ -142,10 +142,10 @@ function drawMember2Image() {
     ctx2.beginPath();
     ctx2.fillStyle = tmYellowFill;
     ctx2.moveTo(0, 335);
-    // ctx2.lineTo(114, 385);
-    // ctx2.lineTo(228, 335);
-    // ctx2.lineTo(228, 355);
-    // ctx2.lineTo(114, 405);
+    ctx2.lineTo(114, 385);
+    ctx2.lineTo(228, 335);
+    ctx2.lineTo(228, 355);
+    ctx2.lineTo(114, 405);
     ctx2.lineTo(0, 355);
     ctx2.fill();
 
@@ -157,9 +157,9 @@ function drawMember2Image() {
     ctx_overlay2.moveTo(0,50);
     ctx_overlay2.lineTo(114,0);
     ctx_overlay2.lineTo(228,50);
-    // ctx_overlay2.lineTo(228,335);
+    ctx_overlay2.lineTo(228,335);
     ctx_overlay2.lineTo(114,385);
-    // ctx_overlay2.lineTo(0,335);
+    ctx_overlay2.lineTo(0,335);
     ctx_overlay2.fill();
 }
 
@@ -206,6 +206,49 @@ function drawMember3Image() {
     ctx_overlay3.fill();
 }
 
+function drawMember4Image() {
+    var member4Image = document.getElementById("member4");
+    // Draw Member 2
+    var canvas4 = document.getElementById("member4_canvas");
+    var ctx4 = canvas4.getContext("2d");
+
+    ctx4.save();
+    // Create a polygon
+    ctx4.beginPath();
+    ctx4.moveTo(0,50);
+    ctx4.lineTo(114,0);
+    ctx4.lineTo(228,50);
+    ctx4.lineTo(228,335);
+    ctx4.lineTo(114,385);
+    ctx4.lineTo(0,335);      
+    ctx4.clip(); // Clip to the current path
+    ctx4.drawImage(member4Image, 0, 0);
+
+    ctx4.restore();
+    ctx4.beginPath();
+    ctx4.fillStyle = tmYellowFill;
+    ctx4.moveTo(0, 335);
+    ctx4.lineTo(114, 385);
+    ctx4.lineTo(228, 335);
+    ctx4.lineTo(228, 355);
+    ctx4.lineTo(114, 405);
+    ctx4.lineTo(0, 355);
+    ctx4.fill();
+
+    var canvas_overlay4 = document.getElementById("member4_canvas_overlay");
+    var ctx_overlay4 = canvas_overlay4.getContext("2d");
+
+    ctx_overlay4.fillStyle = tmFillStyle;
+    ctx_overlay4.beginPath();
+    ctx_overlay4.moveTo(0,50);
+    ctx_overlay4.lineTo(114,0);
+    ctx_overlay4.lineTo(228,50);
+    ctx_overlay4.lineTo(228,335);
+    ctx_overlay4.lineTo(114,385);
+    ctx_overlay4.lineTo(0,335);
+    ctx_overlay4.fill();
+}
+
 function setupAboutSection(){
 
     /* http://www.chrislinford.co.uk/get-going-guides/HTML5/drawatriangleont.html
@@ -226,6 +269,12 @@ function setupAboutSection(){
 
     $("#member3").one('load', function() {
       drawMember3Image(); 
+    }).each(function() {
+      if(this.complete) $(this).load();
+    });    
+
+    $("#member4").one('load', function() {
+      drawMember4Image(); 
     }).each(function() {
       if(this.complete) $(this).load();
     });
