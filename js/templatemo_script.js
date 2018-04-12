@@ -58,7 +58,14 @@
         $("#responsive-menu").show();
         $("#responsive-menu").animate({"right":0});
         return false;
-    });
+    });     
+
+    $("#bdy").click(function(){
+        $("#responsive-menu").hide();
+        $("#responsive-menu").animate({"right":0});
+        return false;
+    });    
+
     $(window).on("load resize", function(){
         if($(window).width()>768){
             $("#responsive-menu").css({"right":-1500});
@@ -67,7 +74,8 @@
 
     $("#responsive-menu a").click(function(){
       $("#responsive-menu").hide();
-  });
+    });    
+
 
 })(jQuery);
 
